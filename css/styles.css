@@ -457,7 +457,15 @@ a {
   text-decoration: none;
   display: flex;
   justify-content: space-evenly;
-  list-style: none;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+}
+
+.projetos__filter li {
+  margin-right: 10px;
+  line-height: 2.2rem;
+
 }
 
 .projetos__wrapper {
@@ -480,12 +488,12 @@ a {
 .projetos__card span {
   display: flex;
   justify-content: space-around;
-  margin: .8rem auto;
+  margin: .5rem auto;
   width: 100%;
 }
 
 .projetos__card span img {
-  width: 40px;
+  width: 30px;
 }
 
 .projetos__card-button__all {
@@ -513,8 +521,7 @@ a {
   border-left: 5px solid #00d2df;
   width: 100%;
   transition: 0.5s;
-  max-height: 280px;
-  height: auto;
+  height: 280px;
 }
 
 .projeto-img:hover {
@@ -554,7 +561,7 @@ a {
   background-color: rgba(101, 24, 180, 1);
 }
 
-@media (max-width: 1325px) {
+@media (min-width: 950px) and (max-width: 1325px) {
   .principal h1 {
     font-size: 1rem;
   }
@@ -573,9 +580,10 @@ a {
   .projetos {
     padding: 6.5%;
   }
+  
 }
 
-@media (max-width: 880px) {
+@media (max-width: 949px) {
 
   .principal,
   .sobre-mim,
@@ -660,6 +668,25 @@ a {
   .projetos__card-button {
     margin: auto;
   }
+
+  .projetos__card p {
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+  }
+
+  .projetos__card .projeto-img {
+    height: 360px;
+  }
+
+  .projetos__card span img {
+    width: 50px;
+  }
+
+  .projetos__wrapper .projetos__card:not(.projetos__card1) {
+    margin-top: 3rem;
+  }
+
 }
 
 @media (max-width: 460px) {
@@ -676,13 +703,48 @@ a {
   .sobre-mim__descricao-buttons-curriculo,
   .sobre-mim__descricao-buttons-email,
   .projetos__card-button {
-    width: 110px;
+    width: 100px;
   }
 
   .principal__botao,
   .sobre-mim__descricao-buttons {
     width: auto;
     justify-content: space-around;
+  }
+
+  .projetos__card .projeto-img {
+    height: 170px;
+  }
+
+  .projetos__card h2 {
+    margin: 0.9rem 0;
+  }
+
+  .projetos__card p {
+    font-size: 15px;
+    line-height: 1.1rem;
+    margin-bottom: 1rem;
+  }
+
+  .projetos__card span img {
+    width: 30px;
+  }
+
+  .projetos__card .projetos__card-button__all {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .projetos__card .projetos__card-button {
+    width: 100px;
+    height: 35px;
+  }
+
+  .projetos__card .card-button3 {
+    margin-top: 1rem;
+    width: 140px;
+    height: 39px;
   }
 
   footer {
