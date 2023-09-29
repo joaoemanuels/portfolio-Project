@@ -46,6 +46,10 @@ footer span:hover {
   position: relative;
 }
 
+p {
+  line-height: 1.4rem;
+}
+
 h1 {
   text-transform: uppercase;
 }

@@ -14,4 +14,3 @@ initAnimationScroll();
 initTyping();
 initMenuTransition();
 initMenuMobile();
-initanimatedImage();
