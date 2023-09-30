@@ -12,8 +12,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 
 </head>
@@ -130,89 +131,179 @@
     <section class="projetos" id="projetos">
       <h1>Projetos</h1>
       <div>
-        <ul class="projetos__filter">
-          <li>Front-end</li>
-          <li>Figma</li>
-          <li>Jogos</li>
-          <li>certificados</li>
-        </ul>
+        <div class="projetos__filter">
+          <a href="#" class="filtro " data-categoria="todos">Todos</a>
+          <a href="#" class="filtro ativo selected" data-categoria="frontend">Front-end</a>
+          <a href="#" class="filtro" data-categoria="figma">Figma</a>
+          <a href="#" class="filtro" data-categoria="certificados">certificados</a>
+        </div>
       </div>
-      <div class="projetos__wrapper">
-        <section class="projetos__card projetos__card1">
-          <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-            <img src="./assets/project/colors-game.png" alt="" class="projeto-img" />
-          </a>
-          <span>
-            <img src="assets/skills/JavaScript.svg" alt="">
-            <img src="assets/skills/Html 5.svg" alt="">
-            <img src="assets/skills/CSS3.svg" alt="">
-            <img src="assets/skills/Figma.svg" alt="">
-          </span>
-          <h2>Colors Memorize</h2>
-          <p>
-            Projeto em que o usuário deve acertar a sequência correta dos itens, sendo que a cada nivel aumenta a
-            quantidade
-          </p>
 
-          <div class="projetos__card-button__all">
-            <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-              <div class="projetos__card-button card-button1">
-                <img src="./assets/link.png" alt="">
-                Repositório
-              </div>
-            </a>
-            <a href="" target="_blank">
-              <div class="projetos__card-button card-button2">
-                <img src="./assets/link.png" alt="">
-                Documentação
-              </div>
-            </a>
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <div class="projetos__card-button card-button3">
-                <img src="./assets/link.png" alt="">
-                Acessar Site
-              </div>
-            </a>
-          </div>
-        </section>
-        <section class="projetos__card">
-          <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-            <img src="./assets/project/colors-game.png" alt="" class="projeto-img" />
-          </a>
-          <span>
-            <img src="assets/skills/JavaScript.svg" alt="">
-            <img src="assets/skills/Html 5.svg" alt="">
-            <img src="assets/skills/CSS3.svg" alt="">
-            <img src="assets/skills/Figma.svg" alt="">
-          </span>
-          <h2>Colors Memorize</h2>
-          <p>
-            Projeto em que o usuário deve acertar a sequência correta dos itens, sendo que a cada nivel aumenta a
-            quantidade
-          </p>
+      <div class="itens">
 
-          <div class="projetos__card-button__all">
-            <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-              <div class="projetos__card-button card-button1">
-                <img src="./assets/link.png" alt="">
-                Repositório
+        <div class="item" data-categoria="frontend">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                <img src="./assets/project/colors-game.png" alt="" class="projeto-img" />
+              </a>
+              <span>
+                <img src="assets/skills/JavaScript.svg" alt="">
+                <img src="assets/skills/Html 5.svg" alt="">
+                <img src="assets/skills/CSS3.svg" alt="">
+                <img src="assets/skills/Figma.svg" alt="">
+              </span>
+              <h2>Colors Memorize</h2>
+              <p>
+                Projeto em que o usuário deve acertar a sequência correta dos itens, sendo que a cada nivel aumenta a
+                quantidade
+              </p>
+              <div class="projetos__card-button__all">
+                <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="">
+                    Repositório
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="">
+                    Documentação
+                  </div>
+                </a>
+                <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="">
+                    Acessar Site
+                  </div>
+                </a>
               </div>
-            </a>
-            <a href="" target="_blank">
-              <div class="projetos__card-button card-button2">
-                <img src="./assets/link.png" alt="">
-                Documentação
+            </section>
+            <section class="projetos__card">
+              <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                <img src="./assets/project/random-dice.png" alt="" class="projeto-img" />
+              </a>
+              <span>
+                <img src="assets/skills/JavaScript.svg" alt="">
+                <img src="assets/skills/Html 5.svg" alt="">
+                <img src="assets/skills/CSS3.svg" alt="">
+                <img src="assets/skills/Figma.svg" alt="">
+              </span>
+              <h2>Colors Memorize</h2>
+              <p>
+                Projeto em que o usuário deve acertar a sequência correta dos itens, sendo que a cada nivel aumenta a
+                quantidade
+              </p>
+
+              <div class="projetos__card-button__all">
+                <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="">
+                    Repositório
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="">
+                    Documentação
+                  </div>
+                </a>
+                <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="">
+                    Acessar Site
+                  </div>
+                </a>
               </div>
-            </a>
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <div class="projetos__card-button card-button3">
-                <img src="./assets/link.png" alt="">
-                Acessar Site
-              </div>
-            </a>
+            </section>
           </div>
-        </section>
+        </div>
+
+        <div class="item" data-categoria="figma">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                <img src="assets/project/figma-appSocial.png" alt="" class="projeto-img" />
+              </a>
+              <h2>Social App Design</h2>
+              <p>
+                Design de projeto ficticio em que prototipa uma rede social
+              </p>
+              <div class="projetos__card-button__all">
+                <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="">
+                    Documentação
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="">
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                <img src="assets/project/teste.jpg" alt="" class="projeto-img" />
+              </a>
+              <h2>Social App Design</h2>
+              <p>
+                Design de projeto ficticio em que prototipa uma rede social
+              </p>
+              <div class="projetos__card-button__all">
+                <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="">
+                    Documentação
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="">
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            
+          </div>
+        </div>
+
+        <div class="item" data-categoria="certificados">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                <img src="assets/project/certificado1.png" alt="" class="projeto-img" />
+              </a>
+              <h2>Curso da DIO</h2>
+              <p>
+                Projeto em que o usuário deve acertar a sequência correta dos itens, sendo que a cada nivel aumenta a
+                quantidade
+              </p>
+              <div class="projetos__card-button__all">
+                <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="">
+                    Sumário
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
       </div>
+
+
+      <!-- Certificados-->
+
+      <!-- Projetos Figma-->
+
+
+
+      <!-- Projetos Front-end-->
+
     </section>
 
     <footer>
