@@ -403,6 +403,10 @@ section h1 {
   padding: 0;
 }
 
+.projetos__filter a {
+  padding: 9px;
+}
+
 .projetos__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -838,13 +842,7 @@ footer span:hover {
 }
 
 
-/* -------------------- Definição de animações e transições -------------------- */
-
-
-
-
 /* -------------------- Outros Estilos -------------------- */
-
 
 ::-webkit-scrollbar {
   width: 10px;
