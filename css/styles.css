@@ -864,6 +864,7 @@ footer span:hover {
 
 .item {
   display: none;
+  padding-bottom: 50px;
 }
 
 .mostrar {
