@@ -381,21 +381,20 @@ section h1 {
 
 /* ----Skills---- */
 #skills {
-  width: 80%;
-  margin: 20px auto ;
+  width: 90%;
+  margin: 20px auto;
   overflow: hidden;
 }
 
 .skills-content {
   display: flex;
   justify-content: space-evenly;
-  height: 80px;
+  height: 60px;
   width: 100%;
-
 }
 
 #skills div img {
-  width: 80px;
+  width: 60px;
   height: 100%;
 }
 
@@ -631,6 +630,22 @@ footer span:hover {
     width: 90%;
   }
 
+  #skills {
+    margin: 0 auto;
+  }
+
+  .skills-content {
+    flex-wrap: wrap;
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #skills div img {
+    width: 40px;
+    height: 40px;
+
+  }
   .experiencia__descricao span {
     display: block;
     position: inherit;
@@ -708,7 +723,7 @@ footer span:hover {
   }
 }
 
-@media (min-width: 320px) and (max-width: 500px) {
+@media (max-width: 500px) {
   .principal span {
     font-size: 1.8rem;
   }
