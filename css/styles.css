@@ -562,6 +562,7 @@ footer span:hover {
 
 /*-----Mobile-----*/
 @media (max-width: 949px) {
+
   .principal,
   .sobre-mim,
   .experiencia,
@@ -644,8 +645,8 @@ footer span:hover {
   #skills div img {
     width: 40px;
     height: 40px;
-
   }
+
   .experiencia__descricao span {
     display: block;
     position: inherit;
