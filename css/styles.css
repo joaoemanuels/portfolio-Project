@@ -299,11 +299,85 @@ section h1 {
   filter: opacity(55%);
   transition: 0.4s;
   width: 80%;
+  border-radius: 50%;
 }
 
 .sobre-mim__foto img:hover {
   filter: opacity(70%);
   border-left: 5px solid var(--cor-destaque2);
+}
+
+/*-----services-----*/
+
+.services {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid red;
+  background-color: #353535;
+}
+
+.services__title {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services__title-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.services__title-text h2 {
+  font-size: 2rem;
+}
+
+.services__title-text p {
+  font-size: 1.5rem;
+}
+
+.services__content {
+  width: 90%;
+  border: 1px solid rgb(153, 139, 139);
+  display: grid;
+  gap: 0 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  margin: 90px auto 0;
+}
+
+.services__content .services__content-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.services__content .services__content-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.services__content .services__content-card p {
+  border: 1px solid red;
+  width: 80%;
+  text-align: center;
+}
+
+.services__content .services__content-card button {}
+
+.services__content .card-service2 {
+  margin: -60px 0 0 0;
 }
 
 /*-----Experiência-----*/
@@ -398,7 +472,7 @@ section h1 {
   height: 100%;
 }
 
-#skills .skills-content .skill-card{
+#skills .skills-content .skill-card {
   position: relative;
 }
 
