@@ -225,6 +225,7 @@ section h1 {
   align-items: center;
   position: relative;
   min-height: 60vh;
+  background-color: #07090E;
 }
 
 .principal__left {
@@ -275,6 +276,7 @@ section h1 {
 .sobre-mim {
   display: flex;
   justify-content: space-around;
+  background-color: #0A0D14;
 }
 
 .sobre-mim__descricao {
@@ -313,8 +315,8 @@ section h1 {
   display: flex;
   flex-direction: column;
   height: 500px;
-  border: 1px solid red;
-  background-color: #353535;
+  background-color: #07090E;
+  padding: 100px 0 50px 0;
 }
 
 .services__title {
@@ -348,7 +350,6 @@ section h1 {
 
 .services__content {
   width: 90%;
-  border: 1px solid rgb(153, 139, 139);
   display: grid;
   gap: 0 20px;
   grid-template-columns: 1fr 1fr 1fr;
@@ -369,18 +370,27 @@ section h1 {
 }
 
 .services__content .services__content-card p {
-  border: 1px solid red;
   width: 80%;
   text-align: center;
 }
 
-.services__content .services__content-card button {}
+.services__content .services__content-card button {
+  margin: 0;
+  padding: 7px 20px;
+  border-radius: 34px;
+  color: black;
+  background-color: #FF6B35;
+}
 
 .services__content .card-service2 {
   margin: -60px 0 0 0;
 }
 
 /*-----Experiência-----*/
+
+.experiencia {
+  background-color: #0A0D14;
+}
 
 .experiencia__wrapper {
   display: flex;
@@ -494,6 +504,10 @@ section h1 {
 
 /*-----Projetos-----*/
 
+.projetos {
+  background-color: #0A0D14;
+}
+
 .projetos h1 {
   margin-bottom: 1.2rem;
 }
@@ -583,6 +597,7 @@ footer {
   padding: 2rem 0;
   text-align: center;
   margin-top: 3rem;
+  background-color: #07090E;
 }
 
 footer p {
