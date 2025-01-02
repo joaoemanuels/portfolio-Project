@@ -30,10 +30,6 @@ header {
   z-index: 100;
 }
 
-main {
-  color: #c4c4c4;
-}
-
 /* -------------------- Estilos para h1, h2, h3, etc. -------------------- */
 h1,
 h2,
@@ -271,6 +267,45 @@ section h1 {
   animation: blink 0.6s infinite alternate;
 }
 
+/* ----Skills---- */
+#skills {
+  background-color: #0A0D14;
+  margin: -30px 0 0 0 ;
+}
+
+.skills-content {
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+#skills div img {
+  width: 60px;
+  height: 100%;
+}
+
+#skills .skills-content .skill-card {
+  position: relative;
+}
+
+#skills .skills-content .skill-card .tooltip {
+  position: absolute;
+  bottom: 100%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#skills .skills-content .skill-card:hover .tooltip {
+  opacity: 1;
+}
+
 /*-----Sobre mim-----*/
 
 .sobre-mim {
@@ -341,7 +376,9 @@ section h1 {
 }
 
 .services__title-text h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
+  color: #D1E8E2;
+  font-weight: bold;
 }
 
 .services__title-text p {
@@ -369,17 +406,33 @@ section h1 {
   height: 100px;
 }
 
+.services__content .services__content-card h2 {
+  font-size: 1.7rem;
+  padding: 0;
+  margin: 0;
+}
+
+.services__content .services__content-card h3 {
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 8px 0;
+}
+
 .services__content .services__content-card p {
   width: 80%;
   text-align: center;
+  padding: 0;
+  margin: 10px 0;
 }
 
 .services__content .services__content-card button {
   margin: 0;
-  padding: 7px 20px;
+  padding: 10px 23px;
   border-radius: 34px;
   color: black;
   background-color: #FF6B35;
+  font-size: 1rem;
+  font-weight: bold;
 }
 
 .services__content .card-service2 {
@@ -463,44 +516,6 @@ section h1 {
   font-weight: bold;
 }
 
-/* ----Skills---- */
-#skills {
-  width: 80%;
-  margin: 20px auto;
-}
-
-.skills-content {
-  display: flex;
-  justify-content: space-evenly;
-  height: 60px;
-  width: 80%;
-  margin: 0 auto;
-}
-
-#skills div img {
-  width: 60px;
-  height: 100%;
-}
-
-#skills .skills-content .skill-card {
-  position: relative;
-}
-
-#skills .skills-content .skill-card .tooltip {
-  position: absolute;
-  bottom: 100%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: #fff;
-  padding: 5px;
-  border-radius: 5px;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-
-#skills .skills-content .skill-card:hover .tooltip {
-  opacity: 1;
-}
 
 /*-----Projetos-----*/
 
