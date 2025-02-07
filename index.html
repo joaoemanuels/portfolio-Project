@@ -1,483 +1,607 @@
 <!DOCTYPE html>
 <html lang="pt-BR" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio do desenvolvedor front-end João Emanuel A. Barbosa. Projetos modernos em HTML, CSS e JavaScript com foco em design responsivo e funcionalidade."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, html, front-end, desenvolvimento, css, javascript"
+    />
+    <meta
+      property="og:image"
+      content="https://img.freepik.com/premium-photo/computer-desk-with-blue-light-that-is-lit-up_579873-1265.jpg?w=740"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="Portfólio do desenvolvedor front-end João Emanuel A. Barbosa. Projetos modernos em HTML, CSS e JavaScript com foco em design responsivo e funcionalidade.">
-  <meta name="keywords" content="portfolio, html, front-end, desenvolvimento, css, javascript">
-  <meta property="og:image"
-    content="https://img.freepik.com/premium-photo/computer-desk-with-blue-light-that-is-lit-up_579873-1265.jpg?w=740" />
+    <title>Portfolio</title>
 
-  <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons/animated.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/icons/animated.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
-</head>
-
-<body>
-  <header>
-    <nav data-menu="suave">
-      <p><a href="#home">&lsaquo;JE/&rsaquo;</a></p>
-      <button data-menu="button" aria-controls="menu"></button>
-      <ul data-menu="list" id="menu">
-        <a href="#home">
-          <li>Home</li>
-        </a>
-        <a href="#sobre">
-          <li>Sobre</li>
-        </a>
-        <a href="#experiencia">
-          <li>Experiência</li>
-        </a>
-        <a href="#projetos">
-          <li>Projetos</li>
-        </a>
-      </ul>
-    </nav>
-  </header>
-
-  <section class="principal" id="home">
-    <div class="principal__left">
-      <h1>Opa, me chamo</h1>
-      <span class="principal__sentence"></span>
-      <span class="principal__input-cursor"></span>
-      <h1>Desenvolvedor Front-End</h1>
-      <div class="principal__botao">
-        <a href="https://www.linkedin.com/in/jo%C3%A3o-emanuel-b4573221b/" target="_blank">
-          <div class="principal__botao-linkedin">
-            <img src="./assets/linkedin.png" alt="" />
-            <p>LinkedIn</p>
-          </div>
-        </a>
-        <a href="https://github.com/joaoemanuels" target="_blank">
-          <div class="principal__botao-github">
-            <img src="./assets/github.png" alt="" />
-            <p>Github</p>
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="principal__right">
-
-      <img src="assets/animated.png" alt="imagem" class="animated-image" id="animated" data-tilt>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="skills-content">
-      <div class="skill-card">
-        <img src="assets/skills/JavaScript.svg" alt="">
-        <div class="tooltip">JavaScript</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/icons/bootstrap.svg" alt="">
-        <div class="tooltip">Bootstrap</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/icons/figma.svg" alt="">
-        <div class="tooltip">Figma</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/icons/tailwind.svg" alt="">
-        <div class="tooltip">Tailwind</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/icons/jQuery.svg" alt="">
-        <div class="tooltip">jQuery</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/icons/Azure.svg" alt="">
-        <div class="tooltip">Azure</div>
-      </div>
-      <div class="skill-card">
-        <img src="assets/skills/wordpress.svg" alt="">
-        <div class="tooltip">Wordpress</div>
-      </div>
-    </div>
-  </section>
-
-  <section class="sobre-mim" id="sobre">
-    <div class="sobre-mim__foto">
-      <img src="./assets/icons/sobre-img.jpg" alt="" />
-    </div>
-    <div class="sobre-mim__descricao">
-      <h1>Sobre mim</h1>
-      <h2>Campina Grande, Paraíba</h2>
-      <p>
-        Bem vindo ao meu portfólio! Meu nome é João e faço projetos <strong>Front End</strong>, atualmente estudando
-        um pouco de Back End para acrescentar ainda mais. Nessa página você vai encontrar meus projetos pessoais,
-        skills e minhas
-        informações de contato.
-      </p>
-      <div class="sobre-mim__descricao-buttons">
-        <a href="" download="">
-          <div class="sobre-mim__descricao-buttons-curriculo">
-            <img src="./assets/download-da-nuvem.png" alt="" />
-            <p>Currículo</p>
-          </div>
-        </a>
-        <a href="mailto: jemanuel.pi@gmail.com?subject=Olá João, vim pelo seu portfólio!" target="_blank">
-          <div class="sobre-mim__descricao-buttons-email">
-            <img src="./assets/email.png" alt="" />
-            <p>E-mail</p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <section class="services">
-    <div class="services__title">
-      <div class="services__title-line">
-        <p>-------------------------------------------------------</p>
-      </div>
-      <div class="services__title-text">
-        <h2>O que faço</h2>
-        <p>Serviços e soluções</p>
-      </div>
-      <div class="services__title-line">
-        <p>-------------------------------------------------------</p>
-      </div>
-    </div>
-    <div class="services__content">
-      <div class="services__content-card">
-        <img src="assets/icons/seo 1.svg" alt="">
-        <h2>Especialista em SEO</h2>
-        <h3>Sites e hospedagem</h3>
-        <p>Aprimoramento e performance de sites para aparecer nas primeiras posições dos motores de busca, como
-          Google. </p>
-        <button type="button">Saiba mais</button>
-      </div>
-      <div class="services__content-card card-service2">
-        <img src="assets/icons/codigo 1.svg" alt="">
-        <h2>Desenvolvedor Web</h2>
-        <h3>Front e back</h3>
-        <p>Desenvolvimento de sites responsivos para todos os dispositivos e funcionais nos principais navegadores.
-          Chrome, Firefox, Edge e Opera. </p>
-        <button type="button">Saiba mais</button>
-      </div>
-      <div class="services__content-card">
-        <img src="assets/icons/prototipagem 1.svg" alt="">
-        <h2>UI/UX Developer</h2>
-        <h3>Prototipagem</h3>
-        <p>Elaboração de esboços iniciais para testar e verificar o fluxo e a experiência do usuário.</p>
-        <button type="button">Saiba mais</button>
-      </div>
-    </div>
-  </section>
-
-  <section class="experiencia" id="experiencia">
-    <h1>Experiência</h1>
-    <div class="experiencia__wrapper">
-      <section class="experiencia__lugares">
-        <ul data-tab="menu">
-          <li>Dev</li>
-          <li>AeC - PB</li>
+  <body>
+    <header>
+      <nav data-menu="suave">
+        <p><a href="#home">&lsaquo;JE/&rsaquo;</a></p>
+        <button data-menu="button" aria-controls="menu"></button>
+        <ul data-menu="list" id="menu">
+          <a href="#home">
+            <li>Home</li>
+          </a>
+          <a href="#sobre">
+            <li>Sobre</li>
+          </a>
+          <a href="#experiencia">
+            <li>Experiência</li>
+          </a>
+          <a href="#projetos">
+            <li>Projetos</li>
+          </a>
         </ul>
-      </section>
-      <div class="experiencia__descricao" data-tab="content">
-        <section data-anime="show-right">
-          <h2>Desenvolvedor Front-End</h2>
-          <span>Out 2021 - Atual</span>
-          <p class="experiencia__descricao-local">Projetos pessoais</p>
+      </nav>
+    </header>
+
+    <section class="principal" id="home">
+      <div class="principal__left">
+        <h1>Opa, me chamo</h1>
+        <span class="principal__sentence"></span>
+        <span class="principal__input-cursor"></span>
+        <h1>Desenvolvedor Front-End</h1>
+        <div class="principal__botao">
+          <a
+            href="https://www.linkedin.com/in/jo%C3%A3o-emanuel-b4573221b/"
+            target="_blank"
+          >
+            <div class="principal__botao-linkedin">
+              <img src="./assets/linkedin.png" alt="" />
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/joaoemanuels" target="_blank">
+            <div class="principal__botao-github">
+              <img src="./assets/github.png" alt="" />
+              <p>Github</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="principal__right">
+        <img
+          src="assets/animated.png"
+          alt="imagem"
+          class="animated-image"
+          id="animated"
+          data-tilt
+        />
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-content">
+        <div class="skill-card">
+          <img src="assets/skills/JavaScript.svg" alt="" />
+          <div class="tooltip">JavaScript</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/icons/bootstrap.svg" alt="" />
+          <div class="tooltip">Bootstrap</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/icons/figma.svg" alt="" />
+          <div class="tooltip">Figma</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/icons/tailwind.svg" alt="" />
+          <div class="tooltip">Tailwind</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/icons/jQuery.svg" alt="" />
+          <div class="tooltip">jQuery</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/icons/Azure.svg" alt="" />
+          <div class="tooltip">Azure</div>
+        </div>
+        <div class="skill-card">
+          <img src="assets/skills/wordpress.svg" alt="" />
+          <div class="tooltip">Wordpress</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sobre-mim" id="sobre">
+      <div class="sobre-mim__foto">
+        <img src="./assets/icons/sobre-img.jpg" alt="" />
+      </div>
+      <div class="sobre-mim__descricao">
+        <h1>Sobre mim</h1>
+        <h2>Campina Grande, Paraíba</h2>
+        <p>
+          Bem vindo ao meu portfólio! Meu nome é João e faço projetos
+          <strong>Front End</strong>, atualmente estudando um pouco de Back End
+          para acrescentar ainda mais. Nessa página você vai encontrar meus
+          projetos pessoais, skills e minhas informações de contato.
+        </p>
+        <div class="sobre-mim__descricao-buttons">
+          <a href="" download="">
+            <div class="sobre-mim__descricao-buttons-curriculo">
+              <img src="./assets/download-da-nuvem.png" alt="" />
+              <p>Currículo</p>
+            </div>
+          </a>
+          <a
+            href="mailto: jemanuel.pi@gmail.com?subject=Olá João, vim pelo seu portfólio!"
+            target="_blank"
+          >
+            <div class="sobre-mim__descricao-buttons-email">
+              <img src="./assets/email.png" alt="" />
+              <p>E-mail</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="services__title">
+        <div class="services__title-line">
+          <p>-------------------------------------------------------</p>
+        </div>
+        <div class="services__title-text">
+          <h2>O que faço</h2>
+          <p>Serviços e soluções</p>
+        </div>
+        <div class="services__title-line">
+          <p>-------------------------------------------------------</p>
+        </div>
+      </div>
+      <div class="services__content">
+        <div class="services__content-card">
+          <img src="assets/icons/seo 1.svg" alt="" />
+          <h2>Especialista em SEO</h2>
+          <h3>Sites e hospedagem</h3>
           <p>
-            Projetos em que desenvolvo como forma de estudo e/ou portfólio, buscando melhorar minhas habilidades
-            atuais e aprender outras que também complementem.
+            Aprimoramento e performance de sites para aparecer nas primeiras
+            posições dos motores de busca, como Google.
           </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Atendimento ao cliente</h2>
-          <span>Dezembro 2022 - Maio 2023</span>
-          <p class="experiencia__descricao-local">AeC Centro de Contatos S/A </p>
+          <button type="button">Saiba mais</button>
+        </div>
+        <div class="services__content-card card-service2">
+          <img src="assets/icons/codigo 1.svg" alt="" />
+          <h2>Desenvolvedor Web</h2>
+          <h3>Front e back</h3>
           <p>
-            Atendimento ao cliente, resolvendo problemas relacionado ao produto de stream auxiliando os clientes em
-            dúvidas e/ou bugs, e também, fazendo
-            requisições técnicas para o setor interno em certos problemas
+            Desenvolvimento de sites responsivos para todos os dispositivos e
+            funcionais nos principais navegadores. Chrome, Firefox, Edge e
+            Opera.
           </p>
+          <button type="button">Saiba mais</button>
+        </div>
+        <div class="services__content-card">
+          <img src="assets/icons/prototipagem 1.svg" alt="" />
+          <h2>UI/UX Developer</h2>
+          <h3>Prototipagem</h3>
+          <p>
+            Elaboração de esboços iniciais para testar e verificar o fluxo e a
+            experiência do usuário.
+          </p>
+          <button type="button">Saiba mais</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="experiencia" id="experiencia">
+      <h1>Experiência</h1>
+      <div class="experiencia__wrapper">
+        <section class="experiencia__lugares">
+          <ul data-tab="menu">
+            <li>Dev</li>
+            <li>AeC - PB</li>
+          </ul>
         </section>
-      </div>
-    </div>
-  </section>
-
-
-
-
-  <section class="projetos" id="projetos">
-    <h1>Projetos</h1>
-    <div>
-      <div class="projetos__filter">
-        <a href="#" class="filtro " data-categoria="todos">Todos</a>
-        <a href="#" class="filtro ativo selected" data-categoria="frontend">Front-end</a>
-        <a href="#" class="filtro" data-categoria="figma">Figma</a>
-        <a href="#" class="filtro" data-categoria="wordpress">Wordpress</a>
-      </div>
-    </div>
-    <div class="itens">
-      <!-- Projetos Front-end-->
-      <div class="item" data-categoria="frontend">
-        <div class="projetos__wrapper">
-          <section class="projetos__card projetos__card1">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/landing-page.png" alt="" class="projeto-img" />
-            </a>
-            <span>
-              <img src="assets/skills/JavaScript.svg" alt="">
-              <img src="assets/skills/Html 5.svg" alt="">
-              <img src="assets/skills/CSS3.svg" alt="">
-              <img src="assets/skills/Figma.svg" alt="">
-            </span>
-            <h2>Landing-page tecnologia</h2>
+        <div class="experiencia__descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Desenvolvedor Front-End</h2>
+            <span>Out 2021 - Atual</span>
+            <p class="experiencia__descricao-local">Projetos pessoais</p>
             <p>
-              Landing-page fictícia altamente <strong>responsiva para todos os dispositivos</strong>
+              Projetos em que desenvolvo como forma de estudo e/ou portfólio,
+              buscando melhorar minhas habilidades atuais e aprender outras que
+              também complementem.
             </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/landing-page" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Repositório
-                </div>
-              </a>
-              <a href="" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="https://joaoemanuels.github.io/landing-page/" target="_blank">
-                <div class="projetos__card-button card-button3">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
           </section>
-          <section class="projetos__card">
-            <a href="https://github.com/joaoemanuels/barber-shop" target="_blank">
-              <img src="./assets/project/barber-shop.png" alt="" class="projeto-img" />
-            </a>
-            <span>
-              <img src="assets/skills/JavaScript.svg" alt="">
-              <img src="assets/skills/Html 5.svg" alt="">
-              <img src="assets/skills/CSS3.svg" alt="">
-              <img src="assets/skills/Figma.svg" alt="">
-            </span>
-            <h2>Landing-page BarberShop</h2>
-            <p>
-              Projeto baseado no figma-barberShop, em que utilizei o design como base para transformar em site
+          <section data-anime="show-right">
+            <h2>Atendimento ao cliente</h2>
+            <span>Dezembro 2022 - Maio 2023</span>
+            <p class="experiencia__descricao-local">
+              AeC Centro de Contatos S/A
             </p>
-
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/barber-shop" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Repositório
-                </div>
-              </a>
-
-              <a href="" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="https://joaoemanuels.github.io/barber-shop/" target="_blank">
-                <div class="projetos__card-button card-button3">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="projetos__card">
-            <a href="https://joaoemanuels.github.io/random_dice/" target="_blank">
-              <img src="./assets/project/random-dice.png" alt="" class="projeto-img" />
-            </a>
-            <span>
-              <img src="assets/skills/JavaScript.svg" alt="">
-              <img src="assets/skills/Html 5.svg" alt="">
-              <img src="assets/skills/CSS3.svg" alt="">
-              <img src="assets/skills/Figma.svg" alt="">
-            </span>
-            <h2>Random dice</h2>
             <p>
-              Projeto no qual dois dados são "jogados" aleatoriamente toda vez que o usuário clica, indicando quem
-              ganhou, quem perdeu, e se deu empate
+              Atendimento ao cliente, resolvendo problemas relacionado ao
+              produto de stream auxiliando os clientes em dúvidas e/ou bugs, e
+              também, fazendo requisições técnicas para o setor interno em
+              certos problemas
             </p>
-
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/random_dice" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Repositório
-                </div>
-              </a>
-
-              <a href="" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="https://joaoemanuels.github.io/random_dice/" target="_blank">
-                <div class="projetos__card-button card-button3">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
           </section>
         </div>
       </div>
+    </section>
 
-      <!-- Projetos Figma-->
-      <div class="item" data-categoria="figma">
-        <div class="projetos__wrapper">
-          <section class="projetos__card projetos__card1">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/figma-appSocial.png" alt="" class="projeto-img" />
-            </a>
-            <h2>Social App</h2>
-            <p>
-              Design de projeto ficticio em que prototipa uma rede social
-            </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="projetos__card">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/figma-barberShop.png" alt="" class="projeto-img" />
-            </a>
-            <h2>BarberShop</h2>
-            <p>
-              Design de projeto ficticio em que prototipa uma landingPage de uma barbearia
-            </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1291097142366459018" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
-          </section>
-          <section class="projetos__card">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/figma-move.png" alt="" class="projeto-img" />
-            </a>
-            <h2>Move</h2>
-            <p>
-              Design de projeto ficticio em que prototipa a landingPage de uma empresa de mudanças
-            </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
-              </a>
-              <a href="https://www.figma.com/community/file/1291097142366459018" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
-              </a>
-            </div>
-          </section>
-
+    <section class="projetos" id="projetos">
+      <h1>Projetos</h1>
+      <div>
+        <div class="projetos__filter">
+          <a href="#" class="filtro" data-categoria="todos">Todos</a>
+          <a href="#" class="filtro ativo selected" data-categoria="frontend"
+            >Front-end</a
+          >
+          <a href="#" class="filtro" data-categoria="figma">Figma</a>
+          <a href="#" class="filtro" data-categoria="wordpress">Wordpress</a>
         </div>
       </div>
+      <div class="itens">
+        <!-- Projetos Front-end-->
+        <div class="item" data-categoria="frontend">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/landing-page.png"
+                  alt=""
+                  class="projeto-img"
+                />
+              </a>
+              <span>
+                <img src="assets/skills/JavaScript.svg" alt="" />
+                <img src="assets/skills/Html 5.svg" alt="" />
+                <img src="assets/skills/CSS3.svg" alt="" />
+                <img src="assets/skills/Figma.svg" alt="" />
+              </span>
+              <h2>Landing-page tecnologia</h2>
+              <p>
+                Landing-page fictícia altamente
+                <strong>responsiva para todos os dispositivos</strong>
+              </p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/landing-page"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Repositório
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://joaoemanuels.github.io/landing-page/"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a
+                href="https://github.com/joaoemanuels/barber-shop"
+                target="_blank"
+              >
+                <img
+                  src="./assets/project/barber-shop.png"
+                  alt=""
+                  class="projeto-img"
+                />
+              </a>
+              <span>
+                <img src="assets/skills/JavaScript.svg" alt="" />
+                <img src="assets/skills/Html 5.svg" alt="" />
+                <img src="assets/skills/CSS3.svg" alt="" />
+                <img src="assets/skills/Figma.svg" alt="" />
+              </span>
+              <h2>KingCut</h2>
+              <p>Projeto de barbearia e cabelereiro altamente responsivo</p>
 
-      <!-- Wordpress-->
-      <div class="item" data-categoria="wordpress">
-        <div class="projetos__wrapper">
-          <section class="projetos__card projetos__card1">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/figma-appSocial.png" alt="" class="projeto-img" />
-            </a>
-            <h2>Social App</h2>
-            <p>
-              Design de projeto ficticio em que prototipa uma rede social
-            </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/barber-shop"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Repositório
+                  </div>
+                </a>
+
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://joaoemanuels.github.io/barber-shop/"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a
+                href="https://joaoemanuels.github.io/random_dice/"
+                target="_blank"
+              >
+                <img
+                  src="./assets/project/random-dice.png"
+                  alt=""
+                  class="projeto-img"
+                />
               </a>
-              <a href="" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
+              <span>
+                <img src="assets/skills/JavaScript.svg" alt="" />
+                <img src="assets/skills/Html 5.svg" alt="" />
+                <img src="assets/skills/CSS3.svg" alt="" />
+                <img src="assets/skills/Figma.svg" alt="" />
+              </span>
+              <h2>Random dice</h2>
+              <p>
+                Projeto no qual dois dados são "jogados" aleatoriamente toda vez
+                que o usuário clica, indicando quem ganhou, quem perdeu, e se
+                deu empate
+              </p>
+
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/random_dice"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Repositório
+                  </div>
+                </a>
+
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://joaoemanuels.github.io/random_dice/"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button3">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Projetos Figma-->
+        <div class="item" data-categoria="figma">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/figma-appSocial.png"
+                  alt=""
+                  class="projeto-img"
+                />
               </a>
-            </div>
-          </section>
-          <section class="projetos__card">
-            <a href="https://joaoemanuels.github.io/colors-game/" target="_blank">
-              <img src="assets/project/figma-barberShop.png" alt="" class="projeto-img" />
-            </a>
-            <h2>BarberShop</h2>
-            <p>
-              Design de projeto ficticio em que prototipa uma landingPage de uma barbearia
-            </p>
-            <div class="projetos__card-button__all">
-              <a href="https://github.com/joaoemanuels/colors-game" target="_blank">
-                <div class="projetos__card-button card-button1">
-                  <img src="./assets/link.png" alt="">
-                  Documentação
-                </div>
+              <h2>Social App</h2>
+              <p>Design de projeto ficticio em que prototipa uma rede social</p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/colors-game"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/figma-barberShop.png"
+                  alt=""
+                  class="projeto-img"
+                />
               </a>
-              <a href="https://www.figma.com/community/file/1291097142366459018" target="_blank">
-                <div class="projetos__card-button card-button2">
-                  <img src="./assets/link.png" alt="">
-                  Acessar Site
-                </div>
+              <h2>BarberShop</h2>
+              <p>
+                Design de projeto ficticio em que prototipa uma landingPage de
+                uma barbearia
+              </p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/colors-game"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://www.figma.com/community/file/1291097142366459018"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/figma-move.png"
+                  alt=""
+                  class="projeto-img"
+                />
               </a>
-            </div>
-          </section>
+              <h2>Move</h2>
+              <p>
+                Design de projeto ficticio em que prototipa a landingPage de uma
+                empresa de mudanças
+              </p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/colors-game"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://www.figma.com/community/file/1291097142366459018"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <!-- Wordpress-->
+        <div class="item" data-categoria="wordpress">
+          <div class="projetos__wrapper">
+            <section class="projetos__card projetos__card1">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/figma-appSocial.png"
+                  alt=""
+                  class="projeto-img"
+                />
+              </a>
+              <h2>Social App</h2>
+              <p>Design de projeto ficticio em que prototipa uma rede social</p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/colors-game"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a href="" target="_blank">
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+            <section class="projetos__card">
+              <a
+                href="https://joaoemanuels.github.io/colors-game/"
+                target="_blank"
+              >
+                <img
+                  src="assets/project/figma-barberShop.png"
+                  alt=""
+                  class="projeto-img"
+                />
+              </a>
+              <h2>BarberShop</h2>
+              <p>
+                Design de projeto ficticio em que prototipa uma landingPage de
+                uma barbearia
+              </p>
+              <div class="projetos__card-button__all">
+                <a
+                  href="https://github.com/joaoemanuels/colors-game"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button1">
+                    <img src="./assets/link.png" alt="" />
+                    Documentação
+                  </div>
+                </a>
+                <a
+                  href="https://www.figma.com/community/file/1291097142366459018"
+                  target="_blank"
+                >
+                  <div class="projetos__card-button card-button2">
+                    <img src="./assets/link.png" alt="" />
+                    Acessar Site
+                  </div>
+                </a>
+              </div>
+            </section>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer>
-    <p>Desenvolvido por</p>
-    <a href="" target="_blank">
-      <span> João Emanuel</span>
-    </a>
-  </footer>
+    <footer>
+      <p>Desenvolvido por</p>
+      <a href="" target="_blank">
+        <span> João Emanuel</span>
+      </a>
+    </footer>
 
-
-  <script src="./js/script.js" type="module"></script>
-  <script src="./js/modules/vanilla-tilt.min.js"></script>
-</body>
-
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/modules/vanilla-tilt.min.js"></script>
+  </body>
 </html>
